@@ -1,10 +1,10 @@
 provider "aws" {
-  region			= "${var.region}"
+  region              = "${var.region}"
 }
 
 resource "aws_vpc" "tithomas-vpc1" {
-  cidr_block        = "${var.vpc_cidr}"
+  cidr_block          = "${var.vpc_cidr}"
   tags {
-    Name            = "tithomas-vpc1"
+    Name              = "tithomas-vpc1"
   }
 }
